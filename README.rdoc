@@ -1,0 +1,3 @@
+= mm-blog-demo
+
+middleman 2.0 with blog and tags support

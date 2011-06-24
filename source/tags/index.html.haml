@@ -1,0 +1,6 @@
+%h1 All Tags
+
+%ul
+  - blog_tags.each do |key, data|
+    %li
+      = link_to data.title, key

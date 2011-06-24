@@ -1,0 +1,27 @@
+!!! 5
+%html{ :lang => "en" }
+  %head
+    %meta{ :charset => "utf-8" }    
+
+    / Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    %meta{ :content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }
+
+    / Comment in layout
+
+    = stylesheet_link_tag "site.css"
+
+    :javascript
+      // Comment in javascript
+
+    = yield_content :head
+    
+  %body{ :class => page_classes }
+    = link_to "Blog Demo", "/"
+    #main{ :role => "main" }
+
+      - if is_blog_article?
+        %h1= current_article_title
+      = yield
+      %br
+      - current_article_tags.each do |tag_name,tag_url|
+        = link_to tag_name, tag_url

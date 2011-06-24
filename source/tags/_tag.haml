@@ -1,0 +1,6 @@
+%h1= current_tag_title
+- current_tag_articles.each do |article|
+  %h2
+    = link_to article.title, article.url
+    %span= article.date.strftime('%b %e %Y')
+  = article.summary
