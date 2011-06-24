@@ -1,9 +1,8 @@
 GIT
   remote: git://github.com/matt-hh/middleman.git
-  revision: 352f8ec816b2006955aaf578f11937bf710855ae
-  branch: blog_tags
+  revision: 5a467d4258c1371e03ce2d1ae462b5801a25bb61
   specs:
-    middleman (2.0.0.beta3)
+    middleman (2.0.0.beta4)
       coffee-filter (~> 0.1.0)
       coffee-script (~> 2.2.0)
       compass (= 0.11.2)
